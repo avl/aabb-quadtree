@@ -12,7 +12,7 @@ use fnv::FnvHasher;
 use std::cmp::Ord;
 use std::collections::HashMap;
 use std::hash::BuildHasherDefault;
-use euclid::{TypedRect, TypedPoint2D, TypedSize2D};
+pub use euclid::{TypedRect, TypedPoint2D, TypedSize2D};
 
 type FnvHashMap<K, V> = HashMap<K, V, BuildHasherDefault<FnvHasher>>;
 
